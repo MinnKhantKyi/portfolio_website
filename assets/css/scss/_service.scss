@@ -1,0 +1,55 @@
+.service {
+    background-color: $primary-black;
+    padding: 2rem;
+    padding-top: 8rem;
+
+    .card-container {
+        @include flex(row, center, center);
+
+        .card {
+            width: 280px;
+            background-color: $secondary-black;
+            color: $color-white;
+            border: 0;
+            @include transAll4sEIO();
+
+            .card-img-top {
+                object-fit: cover;
+                width: 280px;
+                height: 180px;
+                @include transAll4sEIO();
+            }
+
+            .card-body {
+                margin-top: 0.5rem;
+                margin-bottom: 2rem;
+                padding: 1rem 0;
+
+                .card-title {
+                    font-size: $card-title-font-size;
+                    font-weight: 700;
+                    margin-top: 1.5rem;
+                    margin-bottom: 1.5rem;
+                }
+        
+                .card-text {
+                    font-size: $card-body-font-size;
+                    line-height: $card-line-height;
+                }
+            }
+
+            &:hover {
+                transform: scale(1.2);
+                box-shadow: 4px 8px 10px rgba(0,0,0,0.8);
+                // margin: 2.5rem 0;
+
+                img {
+                    &:hover {
+                        transform: scale(1.1);
+                        box-shadow: 4px 8px 10px rgba(0,0,0,0.8);
+                    }
+                }
+            }
+        }
+    }
+}

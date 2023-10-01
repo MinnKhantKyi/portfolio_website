@@ -1,0 +1,43 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: $body-font-size;
+    color: $color-white;
+    position: relative;
+    @include transAll4sEIO();
+}
+
+body.fade-out {
+    background-color: #000;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+}
+
+input:focus {
+    outline: none;
+}
+
+::selection {
+    background-color: $color-green;
+}

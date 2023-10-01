@@ -1,0 +1,58 @@
+.contact {
+    background-color: $primary-black;
+    padding: 2rem;
+    padding-top: 8rem;
+
+    .contact-link-con {
+        @include flex(column, center, center);
+
+        img {
+            @include transAll4sEIO();
+            
+            &:hover {
+                transform: scale(1.2);
+                filter: drop-shadow(4px 8px 10px rgba(0,0,0,0.8));
+            }
+        }
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        font-weight: 500;
+    }
+
+    .btn-container {
+        @include flex(column, center, center);
+        margin: 1rem 0;
+        a {
+            padding: 0;
+    
+            .hire-me-btn {
+                @include flex(row, center, center);
+                width: 14rem;
+                height: 4rem;
+                border: 3px solid $color-green;
+                border-radius: 5rem;
+        
+                cursor: pointer;
+                font-size: $body-font-size;
+                color: $color-white;
+                @include transAll4sEIO();
+        
+                i {
+                    padding-right: 10px;
+                    @include transAll4sEIO();
+                }
+        
+                &:hover {
+                    color: $color-grey;
+                    border-color: $color-grey;
+        
+                    i {
+                        color: $color-grey;
+                    }
+                }
+            }
+        }
+    }
+}

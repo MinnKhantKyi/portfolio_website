@@ -1,0 +1,40 @@
+.about {
+    background-color: $secondary-black;
+    padding: 2rem;
+    padding-top: 8rem;
+
+    .pro-lan-con {
+        @include flex(row, center, center);
+
+        p {
+            margin: 0 2rem;
+            padding: 0 1rem;
+            margin-bottom: 0.5rem;
+            .shaft {
+                color: $color-green;
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+
+    .pro-lan-icon-con {
+        @include flex(row, space-around, center);
+        padding: 0 2rem;
+
+        img {
+            height: 65px;
+            object-fit: cover;
+            margin: 2rem;
+            @include transAll4sEIO();
+
+            &:hover {
+                transform: scale(1.2);
+                filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.8));
+            }
+        }
+    }
+
+    .sk-footer-text {
+        @include flex(row, center, center);
+    }
+}

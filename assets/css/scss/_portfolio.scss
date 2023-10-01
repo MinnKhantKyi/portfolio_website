@@ -1,0 +1,22 @@
+.portfolio {
+    background-color: $secondary-black;
+    padding: 2rem;
+    padding-top: 8rem;
+
+    .portfolio-card-con {
+        @include flex(row, center, center);
+
+        img {
+            width: 80%;
+            object-fit: contain;
+            cursor: pointer;
+            @include transAll4sEIO();
+
+            &:hover {
+                transform: scale(1.2);
+                box-shadow: 4px 8px 10px rgba(0,0,0,0.8);
+                margin-bottom: 2.5rem;
+            }
+        }
+    }
+}

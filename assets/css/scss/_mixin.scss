@@ -1,0 +1,11 @@
+@mixin flex($dir, $justify, $align) {
+    display: flex;
+    flex-direction: $dir;
+    flex-wrap: wrap;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin transAll4sEIO(){
+    transition: all .3s ease-in-out;
+}

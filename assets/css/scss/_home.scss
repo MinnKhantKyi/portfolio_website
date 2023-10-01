@@ -1,0 +1,104 @@
+.home {
+    background-color: $primary-black;
+    padding: 2rem;
+    padding-top: 10rem;
+
+    .container-lg {
+        p {
+            font-size: 1.8rem;
+            line-height: 2.4rem;
+            margin-bottom: 0;
+            color: $color-white-2;
+        }
+    
+        .name {
+            font-size: 2.5rem;
+            line-height: 3.5rem;
+            font-weight: 500;
+            color: $color-white;
+        }
+    
+        .job {
+            font-size: 4.2rem;
+            line-height: 5.5rem;
+            font-weight: 700;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            color: $color-white;
+        }
+    
+        .link-container {
+            @include flex(row, flex-start, center);
+            margin-bottom: 2.2rem;
+
+            a {
+                .hire-me-btn {
+                    @include flex(row, center, center);
+                    width: 14rem;
+                    height: 4rem;
+                    border: 3px solid $color-green;
+                    border-radius: 5rem;
+
+                    cursor: pointer;
+                    font-size: $body-font-size;
+                    color: $color-white;
+                    @include transAll4sEIO();
+            
+                    i {
+                        padding-right: 10px;
+                        @include transAll4sEIO();
+                    }
+
+                    &:hover {
+                        color: $color-grey;
+                        border-color: $color-grey;
+
+                        i {
+                            color: $color-grey;
+                        }
+                    }
+                }
+            }
+        }
+
+        .icon-link-con {
+            @include flex(row, flex-start, flex-start);
+
+            i {
+                font-size: 3rem;
+                padding-right: 3rem;
+                margin-bottom: 2rem;
+                @include transAll4sEIO();
+                
+                &:hover {
+                    transform: scale(1.5);
+                    margin-left: 2rem;
+                    margin-right: 1rem;
+                }
+
+                &:first-child {
+                    padding-left: 0.5rem;
+                }
+
+                &:last-child {
+                    padding-right: 2.5rem;
+                }
+            }
+
+            img {
+                height: 3rem;
+                margin-left: 0.5rem;
+                @include transAll4sEIO();
+                
+                &:hover {
+                    transform: scale(1.5);
+                    margin-left: 3rem;
+                }
+            }
+        }
+    
+        .cover-photo {
+            object-fit: cover;
+        }
+    }
+}

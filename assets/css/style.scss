@@ -1,0 +1,19 @@
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+// Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Custom SCSS
+@import "scss/variables";
+@import "scss/mixin";
+@import "scss/global";
+@import "scss/common";
+@import "scss/home";
+@import "scss/about";
+@import "scss/service";
+@import "scss/portfolio";
+@import "scss/contact";
+@import "scss/modal";
+@import "scss/mobilePortfoilio";
+@import "scss/webPortfolio";
